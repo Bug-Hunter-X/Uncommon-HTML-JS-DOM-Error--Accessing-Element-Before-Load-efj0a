@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // This code waits for the DOM to be fully loaded before
+    // accessing the element.
+    document.addEventListener('DOMContentLoaded', function() {
+      let myDiv = document.getElementById('myDiv');
+      myDiv.innerHTML = 'Hello, world!';
+    });
+  </script>
+</body>
+</html>
